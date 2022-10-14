@@ -8,11 +8,11 @@ def iThe_10001st_prime
     until aiPrimes.length == iTarget
         iCount = 0
 		(3..i).step(2) do |j|
-			# iCount +1 for each j factor of i
-			iCount += 1 if i % j == 0
+			iCount += 1 if i % j == 0 # iCount +1 for each j factor of i
             break if iCount > 1 # huge performance boost here
 		end
         aiPrimes << i if iCount == 1
+
         i += 2
     end
 
