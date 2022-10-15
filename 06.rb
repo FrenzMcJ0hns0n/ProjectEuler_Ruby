@@ -5,11 +5,11 @@ def iSum_square_difference(iTopLimit)
 	iSumToLimit = 0
 	
 	(1..iTopLimit).each do |i|
-		iSumOfSquares += i ** 2
+		iSumOfSquares += i**2
 		iSumToLimit += i
 	end
 
-	iSumToLimit ** 2 - iSumOfSquares
+	iSumToLimit**2 - iSumOfSquares
 end
 
 puts "#{Time.now.strftime("%d/%m/%Y %H:%M:%S")}"

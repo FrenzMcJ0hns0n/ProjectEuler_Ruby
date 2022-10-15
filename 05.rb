@@ -3,7 +3,7 @@
 def iSmallest_multiple
 	iCurrent = 20
 
-	while true
+	loop do
 		iCount = 0
 		(1..20).each do |i|
 			iCount += 1 if iCurrent % i == 0

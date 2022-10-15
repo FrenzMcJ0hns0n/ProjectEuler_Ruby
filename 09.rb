@@ -6,7 +6,7 @@ def iSpecial_pythagorean_triplet
     for a in (1...1_000) do
         for b in (a...1_000) do
             for c in (b...1_000) do
-                bFound = true if (a ** 2 + b ** 2 == c ** 2) && (a + b + c == 1_000)
+                bFound = true if (a**2 + b**2 == c**2) && (a + b + c == 1_000)
                 break if bFound
             end
             break if bFound
