@@ -6,7 +6,7 @@ def aiSummation_of_primes
     (11...2_000_000).step(2) do |i|
         iModulo10 = i % 10 # Get i last digit
         next if iModulo10 == 5 # Divisible by 5
-        next i.digits.sum % 3 == 0 # Divisible by 3
+        next if i.digits.sum % 3 == 0 # Divisible by 3
         next if (i.to_s.chop!.to_i - iModulo10 * 2) % 7 == 0 # Divisible by 7
 
         fSqrt = Math.sqrt(i) # Float
