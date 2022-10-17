@@ -1,8 +1,8 @@
 # https://projecteuler.net/problem=12
 
 def bIsPrime(nbr)
+    #return true if [2, 3, 5, 7].include?(nbr) # Useless line in this problem
     return false if nbr == 1 || nbr % 2 == 0
-    return true if [2, 3, 5, 7].include?(nbr) # (useless line in this problem)
 
     iModulo10 = nbr % 10 # Get i last digit
     return false if iModulo10 == 5 # Divisible by 5
