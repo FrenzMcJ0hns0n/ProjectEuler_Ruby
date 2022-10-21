@@ -40,13 +40,13 @@ def iLargest_product_in_a_grid
         #p as.inspect
         iOutIdx = aasGrid.find_index(as)
 
-        bUp = iOutIdx >= 4
+        bUp = iOutIdx >= 3
         bDown = iOutIdx < aasGrid.length - 4
 
         as.each do |s|
             iIdx = as.find_index(s)
 
-            bLeft = iIdx >= 4
+            bLeft = iIdx >= 3
             bRight = iIdx < as.length - 4
 
             if bLeft
